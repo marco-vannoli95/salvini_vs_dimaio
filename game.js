@@ -20,7 +20,7 @@ function setup() {
   resizeCanvas(window.innerWidth, window.innerHeight-100)
   salvini = new Salvini();
   localStorage.getItem("level",'undefined')
-  if(localStorage.getItem("level") == 'undefined' | localStorage.getItem("level") == 1 ){
+  if(localStorage.getItem("level") == 'undefined' || localStorage.getItem("level") == 1 ){
   for (let i = 0; i < number_aliens; i++) {
     dimaios.push(new DiMaio());
   }
