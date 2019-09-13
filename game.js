@@ -214,7 +214,7 @@ class DiMaio {
       this.x = random(0,window.innerWidth -60);
       this.y = random(0,250);
       this.diameter = 50
-      this.speed = 1.5;
+      this.speed = 1;
     }
   
     move() {
@@ -235,7 +235,7 @@ class DiMaio {
       this.x = random(0,window.innerWidth -80);
       this.y = random(0,250);
       this.diameter = 80
-      this.speed = 1.5;
+      this.speed = 1;
     }
   
     move() {
