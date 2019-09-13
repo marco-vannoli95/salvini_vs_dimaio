@@ -212,7 +212,7 @@ class DiMaio {
   class Zingaretti {
     constructor() {
       this.x = random(0,window.innerWidth -70);
-      this.y = random(0,250);
+      this.y = random(0,150);
       this.diameter = 40
       this.speed = 1.5;
     }
@@ -233,9 +233,9 @@ class DiMaio {
   class Mattarella {
     constructor() {
       this.x = random(0,window.innerWidth -80);
-      this.y = random(0,250);
+      this.y = random(0,150);
       this.diameter = 60
-      this.speed = 2..5;
+      this.speed = 2;
     }
   
     move() {
