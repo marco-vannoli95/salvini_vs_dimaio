@@ -211,7 +211,7 @@ class DiMaio {
   }
   class Zingaretti {
     constructor() {
-      this.x = random(0,window.innerWidth -60);
+      this.x = random(0,window.innerWidth -70);
       this.y = random(0,150);
       this.diameter = 40
       this.speed = 1.5;
