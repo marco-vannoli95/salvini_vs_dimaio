@@ -110,6 +110,7 @@ function draw() {
    }
    if(level == 3){
     if( score == number_aliens+33){
+        noLoop();
         if (confirm("si va alle elezioni. Salvini ha vinto!!")) {
           localStorage.setItem('level', 1)
           location.reload();
