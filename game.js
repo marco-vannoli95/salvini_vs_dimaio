@@ -191,7 +191,7 @@ class Missiles {
 class DiMaio {
     constructor() {
       this.x = random(0,window.innerWidth -50);
-      this.y = random(0,250);
+      this.y = random(0,150);
       this.diameter = 40
       this.speed = 1;
     }
@@ -212,13 +212,13 @@ class DiMaio {
   class Zingaretti {
     constructor() {
       this.x = random(0,window.innerWidth -60);
-      this.y = random(0,250);
-      this.diameter = 50
+      this.y = random(0,150);
+      this.diameter = 40
       this.speed = 1;
     }
   
     move() {
-      this.x += random(-3, 3);
+      this.x += random(-2, 2);
       this.y += random(-this.speed, this.speed);
     }
   
@@ -233,14 +233,14 @@ class DiMaio {
   class Mattarella {
     constructor() {
       this.x = random(0,window.innerWidth -80);
-      this.y = random(0,250);
-      this.diameter = 80
-      this.speed = 1;
+      this.y = random(0,150);
+      this.diameter = 60
+      this.speed = 2;
     }
   
     move() {
       this.x += random(-2, 2);
-      this.y += random(0, this.speed);
+      this.y += random(-1, this.speed);
     }
   
     display() {
