@@ -26,13 +26,13 @@ function setup() {
   }
   }
   if( level == 2){
-    number_aliens = 20
+    number_aliens = 18
     for (let i = 0; i < number_aliens; i++) {
       dimaios.push(new Zingaretti());
     }
   }
   if( level == 3){
-    number_aliens = 30
+    number_aliens = 25
     for (let i = 0; i < number_aliens; i++) {
       dimaios.push(new Mattarella());
     }
@@ -109,7 +109,7 @@ function draw() {
      }
    }
    if(level == 3){
-    if( score == number_aliens+35){
+    if( score == number_aliens+23){
         if (confirm("si va alle elezioni. Salvini ha vinto!!")) {
           localStorage.setItem('level', 1)
           location.reload();
@@ -214,11 +214,11 @@ class DiMaio {
       this.x = random(0,window.innerWidth -60);
       this.y = random(0,150);
       this.diameter = 40
-      this.speed = 1;
+      this.speed = 1.5;
     }
   
     move() {
-      this.x += random(-2, 2);
+      this.x += random(-this.speed, this.speed);
       this.y += random(-this.speed, this.speed);
     }
   
@@ -239,8 +239,8 @@ class DiMaio {
     }
   
     move() {
-      this.x += random(-2, 2);
-      this.y += random(-1, this.speed);
+      this.x += random(-this.speed, this.speed);
+      this.y += random(-this.speed, this.speed);
     }
   
     display() {
